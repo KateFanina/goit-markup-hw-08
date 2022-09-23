@@ -1,0 +1,36 @@
+.team-item__list {
+    background-color: var(--title-text-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-block {
+    background-color: var(--third-bg-color);
+}
+
+.team-item__text {
+    padding-top: var(--card-set);
+    padding-bottom: var(--card-set);
+}
+
+.team-item__person {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include font ($lh: 18.75px);
+    text-align: center;
+}
+
+.team-item__work {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-color);
+}

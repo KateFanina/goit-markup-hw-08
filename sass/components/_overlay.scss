@@ -1,0 +1,30 @@
+.flex-item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    @extend %align;
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: var(--accent-color);
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--timing-duration);
+    overflow: auto;
+
+.flex-link:hover &,
+.flex-link:focus & {
+     transform: translateY(0%);
+        }
+}
+

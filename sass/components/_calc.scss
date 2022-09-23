@@ -1,0 +1,13 @@
+.flex-list,
+.team__list {
+    flex-basis: calc((100% - 2 * var(--card-set)) / 3);
+    margin-right: var(--card-set);
+}
+
+.calculation {
+    flex-basis: calc((100% - 3 * var(--card-set)) / 4);
+}
+
+.clients-calc {
+    flex-basis: calc((100% - 5 * var(--card-set)) / 6);
+}

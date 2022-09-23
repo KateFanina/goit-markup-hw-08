@@ -1,0 +1,36 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__list:last-child {
+    margin-right: 0;
+}
+
+.thumb {
+    position: relative;
+    top: 0;
+    right: 0;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.thumb__text {
+    position: absolute;
+    bottom: 0px;
+    padding: 27px 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    color: var(--title-text-color);
+}
+.flex-list {
+    margin-bottom: var(--card-set);
+
+    &:nth-child(3n) {
+            margin-right: 0;
+        }
+}
+

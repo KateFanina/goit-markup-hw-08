@@ -1,0 +1,30 @@
+.feature {
+    @extend %align;
+    height: 120px;
+    margin-bottom: var(--card-set);
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.section.about {
+    padding-top: 0;
+}
+
+.feature__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.feature__text {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.71;
+    color: var(--title-color);
+}

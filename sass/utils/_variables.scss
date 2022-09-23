@@ -1,0 +1,21 @@
+:root {
+    --title-color: #757575;
+    --title-text-color: #ffffff;
+    --accent-color: #2196f3;
+    --secondary-bg-color: #2f303a;
+    --logo-color: #000000;
+    --comon-color: #212121;
+    --third-bg-color: #f5f4fa;
+    --card-set: 30px;
+    --timing-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--title-text-color);
+    color: var(--comon-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin: 0;
+}

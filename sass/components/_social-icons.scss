@@ -1,0 +1,47 @@
+.team-icon {
+    display: flex;
+
+&:not(:first-child) {
+    margin-left: 10px;
+     }
+}
+
+.list-icon {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 0;
+}
+
+.link-icon {
+    @extend %align;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    fill: rgba(175, 177, 184, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--timing-duration), fill var(--timing-duration);
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    fill: var(--title-text-color);
+     }
+}
+
+.svg-icon {
+    color: currentColor;
+}
+
+.lists-icon {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.icons {
+    fill: var(--title-text-color);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
