@@ -1,14 +1,25 @@
+.logo {
+    // margin-right: 93px;
+    font-family: 'Raleway';
+    @include fonts($fs: 24px, $lh: 28px);
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+
 // .main-nav {
 //     display: flex;
 //     align-items: center;
 // }
-.logo {
-    // margin-right: 276px;
-    font-family: 'Raleway';
-    @include fonts($fs: 26px, $lh: 30.52px);
-    color: var(--logo-color);
-    text-decoration: none;
-}
+// .logo {
+//     margin-right: 93px;
+//     font-family: 'Raleway';
+//     @include fonts($fs: 26px, $lh: 30.52px);
+//     color: var(--logo-color);
+//     text-decoration: none;
+// }
+
+
 
 .studio,
 .logo-item {
