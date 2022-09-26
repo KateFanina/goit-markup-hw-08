@@ -20,13 +20,20 @@
     <header>
         <!-- Шапка сайта -->
         <div class="conteiner main-nav">
+
+            <!-- <a href="index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
+            <button type="button" class="open-mobile-menu-btn" data-menu-open>
+                <svg class="open-mobile-menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+                </svg>
+            </button> -->
+            <nav class="navi">
             <a href="index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
             <button type="button" class="open-mobile-menu-btn" data-menu-open>
                 <svg class="open-mobile-menu-btn__icon" width="40" height="40">
                     <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
-            <nav>
                 <ul class="site-nav">
                     <li class="item">
                         <a class="site-nav__link site-nav__link--current" href="">Студія</a>
@@ -59,10 +66,54 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu is-open" data-menu>
+            <div class="mobile-menu__conteiner">
+                <button class="mobile-menu_close-btn" type="button" data-menu-close>
+                    <svg class="mobile-menu_close-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg/sprite.svg#icon-close-2">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav">
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link mobile-menu__nav-link--current" href="">Студія</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link" href="">Контакти</a>
+                    </li>
+                </ul>
+                </nav>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link mobile-menu__contact--blue" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link  mobile-menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                                    </ul>
+                <ul class="mobile-menu__social-list">
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a class="mobile-menu__social-link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main>
+    <!-- <main>
         <section class="hat">
-            <div class="conteiner">
+            <div class="conteiner"> -->
                 <!-- Кнопка замовити послугу -->
                 <!-- <h1 class="hat__title">Ефективні рішення для <br /> вашого бізнесу</h1>
                 <button class="hat__btn" type="button" data-modal-open>Замовити послугу</button>
@@ -446,7 +497,7 @@
         </div>
     </footer> -->
     <!-- =======Модальне вікно===== -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="modal__form">
                 <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
@@ -498,7 +549,9 @@
             </button>
         </div>
     </div>
-    <script src="./modal.js"></script> -->
+    
+    <script src="./menu.js"></script>
+    <script src="./modal.js"></script> 
 </body>
 
 </html>

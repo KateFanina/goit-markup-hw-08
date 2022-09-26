@@ -1,22 +1,40 @@
 .conteiner {
     // width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
+    // padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: bisque;
+    
     }
 
 @media screen and (min-width: 480px) {
     .conteiner {
         width: 480px;
-        margin-left: auto;
-        margin-right: auto;
+        // background-color: aqua;
+        // margin-left: auto;
+        // margin-right: auto;
         }
 }
    
 @media screen and (min-width: 768px) {
     .conteiner {
         width: 768px;
+        background-color: blue;
+        .main-nav {
+                   position: relative;
+                   background-color: blueviolet;
+                // padding-top: 15px;
+          
+                //         padding-bottom: 15px;
+                //    display: flex;
+                // align-items: center;
+                // justify-content: space-between;
+        
+            }
      }
          .link {
+            display: block;
              transition: color var(--timing-duration);
              position: relative;
     
@@ -40,6 +58,7 @@
          }
     
          .contact {
+            display: block;
              fill: var(--title-color);
              transition: color var(--timing-duration);
     
@@ -121,9 +140,10 @@
                          }
                  }
 }
+
 @media screen and (min-width: 1200x) {
     .conteiner {
-        width: 1200px;
+        max-width: 1200px;
     }
 }
 
