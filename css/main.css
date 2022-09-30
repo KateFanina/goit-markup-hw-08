@@ -124,11 +124,16 @@ body .link {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .conteiner {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -143,13 +148,6 @@ body .link {
   }
   .link .contact {
     display: block;
-  }
-  .link .studio,
-.link .logo-item {
-    color: var(--accent-color);
-  }
-  .link .site-nav .item + .item {
-    margin-left: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -244,6 +242,12 @@ body .link {
     letter-spacing: 0.02em;
     color: var(--comon-color);
   }
+  .site-nav__link:hover, .site-nav__link:focus {
+    color: var(--accent-color);
+  }
+  .site-nav__link.site-nav__link--current {
+    color: var(--accent-color);
+  }
   .site-nav__link .item .site-nav__link:last-child {
     margin-right: 0;
   }
@@ -270,6 +274,11 @@ body .link {
   border-bottom: 1px solid #ececec;
 }
 
+.studio,
+.logo-item {
+  color: var(--accent-color);
+}
+
 .item-icon {
   margin-right: 10px;
 }
@@ -279,8 +288,6 @@ body .link {
 
 @media screen and (max-width: 767px) {
   .hat {
-    width: 480px;
-    height: 400px;
     margin: 0 auto;
     background-color: var(--secondary-bg-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero_mobile@1x.jpg);
@@ -309,9 +316,7 @@ body .link {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hat {
-    width: 768px;
     height: 400px;
-    margin: 0 auto;
     background-color: var(--secondary-bg-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero_tablet@1x.jpg);
     background-repeat: no-repeat;
@@ -1074,12 +1079,11 @@ body .link {
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
-    font-family: "Raleway";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.1666666667;
-    color: var(--logo-color);
-    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
 .logo {
@@ -1089,11 +1093,6 @@ body .link {
   line-height: 1.1666666667;
   color: var(--logo-color);
   text-decoration: none;
-}
-
-.studio,
-.logo-item {
-  color: var(--accent-color);
 }
 
 .logo-footer {
@@ -1213,6 +1212,9 @@ body .link {
 .link {
   transition: color var(--timing-duration);
   position: relative;
+}
+.link:hover, .link:focus {
+  color: var(--accent-color);
 }
 
 .contact {

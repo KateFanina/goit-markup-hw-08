@@ -2,9 +2,12 @@
 .link {
     transition: color var(--timing-duration);
     position: relative;
-}
 
-
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
 .contact {
     fill: var(--title-color);
     transition: color var(--timing-duration);

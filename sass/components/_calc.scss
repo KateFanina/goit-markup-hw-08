@@ -8,10 +8,10 @@
 
 @media screen and (min-width: 768px) {
 .calculation {
-        flex-basis: calc((100% - 1 * var(--card-set)) / 2);
+    flex-basis: calc((100% - 1 * var(--card-set)) / 2);
     }
-        .flex-list {
-            flex-basis: calc((100% - 1 * var(--card-set)) / 2);
+.flex-list {
+    flex-basis: calc((100% - 1 * var(--card-set)) / 2);
         }
 }
 @media screen and (min-width: 1200px) {
