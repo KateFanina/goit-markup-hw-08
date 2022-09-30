@@ -1,13 +1,28 @@
-.flex-list,
+
+
 .team__list {
     flex-basis: calc((100% - 2 * var(--card-set)) / 3);
     margin-right: var(--card-set);
 }
 
+
+@media screen and (min-width: 768px) {
+.calculation {
+        flex-basis: calc((100% - 1 * var(--card-set)) / 2);
+    }
+        .flex-list {
+            flex-basis: calc((100% - 1 * var(--card-set)) / 2);
+        }
+}
+@media screen and (min-width: 1200px) {
 .calculation {
     flex-basis: calc((100% - 3 * var(--card-set)) / 4);
 }
 
 .clients-calc {
     flex-basis: calc((100% - 5 * var(--card-set)) / 6);
+}
+.flex-list {
+    flex-basis: calc((100% - 2 * var(--card-set)) / 3);
+}
 }

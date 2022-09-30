@@ -5,19 +5,36 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item {
-    display: flex;
-    flex-wrap: wrap;
-}
+// .team-item {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
 
 .team-block {
     background-color: var(--third-bg-color);
 }
-
+@media screen and (max-width: 1199px) {
 .team-item__text {
-    padding-top: var(--card-set);
-    padding-bottom: var(--card-set);
+        padding-top: var(--card-set);
+        padding-bottom:24px;
+    }
+        .team-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px
+        }
 }
+@media screen and (min-width: 1200px) {
+.team-item__text {
+        padding-top: var(--card-set);
+        padding-bottom: var(--card-set);
+    }
+        .team-item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
+
 
 .team-item__person {
     margin-top: 0;

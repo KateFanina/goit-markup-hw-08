@@ -14,4 +14,28 @@
      border: 1px solid var(--accent-color);
     }
 }
+@media screen and (max-width: 1199px) {
+    .client {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .client__list {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .client{
+        display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            }
+    .client__list {
+        flex-basis: calc((100% - 30px) / 2);
+                 }
+    }
+    
+
 

@@ -1,5 +1,5 @@
 .conteiner {
-    // width: 100%;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -8,80 +8,44 @@
 
 @media screen and (min-width: 480px) {
     .conteiner {
-        padding-top: 15px;
-        padding-bottom: 15px;
         width: 480px;
-          }
+        padding-top: 16px;
+        padding-bottom: 16px;
+       }
 }
    
 @media screen and (min-width: 768px) {
-    .conteiner {
-        display: flex;
+   .conteiner{
     width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-
-
-    .main-nav {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    // align-items: center;    
-            }
-     }
+    padding-bottom: 0;
+   } 
          .link {
             display: block;
              transition: color var(--timing-duration);
              position: relative;
+
     
-             .site-nav & {
-                 display: block;
-                 padding-top: 0;
-                //  padding-top: 32px;
-                 padding-bottom: 32px;
-                 font-weight: 500;
-                 letter-spacing: 0.02em;
-                 color: var(--comon-color);
-             }
-    
-             &:hover,
-             &:focus {
-                 color: var(--accent-color);
-             }
-    
-             &.current {
-                 color: var(--accent-color);
-             }
-         }
-    
+
          .contact {
             display: block;
-             fill: var(--title-color);
-             transition: color var(--timing-duration);
-    
-             &:hover,
-             &:focus {
-                 fill: var(--accent-color);
-             }
-         }
-                 .page-header {
-                     border-bottom: 1px solid #ececec;
-                 }
-        
-                 .studio,
-                 .logo-item {
-                     color: var(--accent-color);
-                 }
-                 .site-nav .item+.item {
-                     margin-left: 50px;
-                 }
-        
-               
+            }
+                     
+.studio,
+.logo-item {
+    color: var(--accent-color);
+}
+.site-nav .item+.item {
+    margin-left: 50px;
+}               
+}
 }
 
-@media screen and (min-width: 1200x) {
+
+@media screen and (min-width: 1200px) {
     .conteiner {
-        max-width: 1200px;
+        width: 1200px;
+        padding-top: 0;
+       
     }
 }
 
