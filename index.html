@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<body>
+<body data-no-scroll>
     <header>
         <!-- Шапка сайта -->
         <div class="conteiner main-nav">
@@ -194,17 +194,13 @@
                     <li class="team__list">
                         <div class="thumb">
                             <picture>
-                                <source
-                                    srcset="./images/design@x1_desktop.webp 1x, ./images/design@x2_desktop.webp 2x"
+                                <source srcset="./images/design@x1_desktop.webp 1x, ./images/design@x2_desktop.webp 2x"
                                     media="(min-width: 1200px)" type="image/webp">
-                                <source
-                                    srcset="./images/design@x1_desktop.jpg 1x, ./images/design@x2_desktop.jpg 2x"
+                                <source srcset="./images/design@x1_desktop.jpg 1x, ./images/design@x2_desktop.jpg 2x"
                                     media="(min-width: 1200px)">
-                                <source
-                                    srcset="./images/design@x1_tablet.webp 1x, ./images/design@x2_tablet.webp 2x"
+                                <source srcset="./images/design@x1_tablet.webp 1x, ./images/design@x2_tablet.webp 2x"
                                     media="(min-width: 768px)" type="image/webp">
-                                <source
-                                    srcset="./images/design@x1_tablet.jpg 1x, ./images/design@x2_tablet.jpg 2x"
+                                <source srcset="./images/design@x1_tablet.jpg 1x, ./images/design@x2_tablet.jpg 2x"
                                     media="(min-width: 768px)">
                                 <img src="images/design.jpg" alt="Дизайн">
                             </picture>
@@ -612,11 +608,12 @@
                 </label>
                 <div class="checkbox">
                     <label class="checkbox__text">
-                        <input class="checkbox__input" type="checkbox" name="agree-to-mailing">
+                        <input class="checkbox__input" type="checkbox" name="agree-to-mailing" />
                         <svg class="checkbox__icon" width="16" height="15">
                             <use class="checkbox__own-icon" href="./images/icons.svg/sprite.svg#icon-check-mark"></use>
                         </svg>
-                        Погоджуюся з розсилкою та приймаю &nbsp; <a class="check-link" href="">Умови договору</a>
+                        <span>Погоджуюся з розсилкою та приймаю &nbsp; <a class="check-link" href="">Умови
+                                договору</a></span>
                     </label>
                 </div>
                 <button type="submit" class="checkbox-btn">Відправити</button>

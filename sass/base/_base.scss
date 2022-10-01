@@ -43,7 +43,7 @@ button {
 }
 .team-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-left: 0;
     @include fonts($fs: 28px, $lh: 32.81px);
     text-align: center;
@@ -61,7 +61,7 @@ button {
     @include fonts($fs: 36px, $lh: 42.19px);
     text-align: center;
     }
-.lists .flex-element+.flex-element,
+// .lists .flex-element+.flex-element,
 .team-item .team-item__list+.team-item__list,
 .client .client__list+.client__list {
     margin-left: var(--card-set);
@@ -69,6 +69,10 @@ button {
 } 
 
 body .link {
-    text-decoration: none;
+    text-decoration: none; 
+}
+
+body.no-scroll{
+    overflow: hidden;  
 }
     
