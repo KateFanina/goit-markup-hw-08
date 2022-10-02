@@ -127,10 +127,11 @@
     .list {
         display: flex;
         align-items: center;
+        gap: 30px;
     }
-        .list .item+.item {
-            margin-left: var(--card-set);
-        }
+        // .list .item+.item {
+        //     margin-left: var(--card-set);
+        // }
     
                 }
                    

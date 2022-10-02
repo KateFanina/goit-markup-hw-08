@@ -262,9 +262,7 @@ body.no-scroll {
   .list {
     display: flex;
     align-items: center;
-  }
-  .list .item + .item {
-    margin-left: var(--card-set);
+    gap: 30px;
   }
 }
 .page-header {
